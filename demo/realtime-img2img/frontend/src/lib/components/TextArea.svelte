@@ -16,7 +16,7 @@
     <textarea
       class="mx-1 w-full px-3 py-2 font-light outline-none dark:text-black"
       title={params?.title}
-      placeholder="Add your prompt here..."
+      placeholder="프롬프트를 입력해주세요..."
       bind:value
     ></textarea>
   </div>

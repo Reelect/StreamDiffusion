@@ -27,18 +27,18 @@ default_negative_prompt = "black and white, blurry, low resolution, pixelated,  
 page_content = """<h1 class="text-3xl font-bold">StreamDiffusion</h1>
 <h3 class="text-xl font-bold">Image-to-Image SD-Turbo</h3>
 <p class="text-sm">
-    This demo showcases
+    해당 실습은 
     <a
     href="https://github.com/cumulo-autumn/StreamDiffusion"
     target="_blank"
     class="text-blue-500 underline hover:no-underline">StreamDiffusion
 </a>
-Image to Image pipeline using
+을 기반으로 제작된 것이며
     <a
     href="https://huggingface.co/stabilityai/sd-turbo"
     target="_blank"
     class="text-blue-500 underline hover:no-underline">SD-Turbo</a
-    > with a MJPEG stream server.
+    > 모델로 이미지를 생성합니다.
 </p>
 """
 
@@ -52,7 +52,7 @@ class Pipeline:
     class InputParams(BaseModel):
         prompt: str = Field(
             default_prompt,
-            title="Prompt",
+            title="적용하고 싶은 인물, 특징, 컨셉 등을 입력해주세요!",
             field="textarea",
             id="prompt",
         )
